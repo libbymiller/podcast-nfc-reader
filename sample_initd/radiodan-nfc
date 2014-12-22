@@ -14,14 +14,14 @@ set -e
 export PATH=$PATH:/usr/local/bin
 export NODE_PATH=$NODE_PATH:/usr/local/lib/node_modules
 export LOG_LEVEL=debug
-export SETTINGS_PATH=/opt/radiodan/apps/nfc/config
+export SETTINGS_PATH=/opt/radiodan/apps/podcast-nfc-reader/config
 
 # Must be a valid filename
 NAME=radiodan-nfc
 PIDFILE=/var/run/radiodan/$NAME.pid
 #This is the command to be run, give the full pathname
 DAEMON=/usr/bin/python
-DAEMON_OPTS="/opt/radiodan/apps/nfc/change_channel.py"
+DAEMON_OPTS="/opt/radiodan/apps/podcast-nfc-reader/accessCardReader.py"
 
 export PATH="${PATH:+$PATH:}/usr/sbin:/sbin"
 
