@@ -10,4 +10,6 @@ It assumes radiodan-client-podcast is present (i.e. the server it sends informat
 It triggers the POST to the server as long as the card ahs changed or been removed
 since it was seen last.
 
+Installation 
 
+- requires nxppy - see https://github.com/svvitale/nxppy for installation of that.
